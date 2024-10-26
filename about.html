@@ -1,0 +1,71 @@
+<html>
+ <head>
+  <title>
+   About
+  </title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: url('https://img.freepik.com/premium-photo/low-angle-view-star-field-against-star-field_1048944-18627896.jpg?w=740') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .text-content {
+            max-width: 50%;
+        }
+        .text-content h1 {
+            font-size: 4em;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+        .text-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid-overlay {
+            position: absolute;
+            top: 0px;
+            left: 800px;
+            width: 500%;
+            height: 200%;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+        }
+  </style>
+ </head>
+ <body>
+  <div class="container">
+   <div class="text-content">
+    <h1>
+     About
+    </h1>
+    <p>
+     Welcome to SpacePulse India, your ultimate resource for real-time information about India's space program, spearheaded by the Indian Space Research Organization (ISRO). Our mission is to connect citizens with the wonders of space exploration and foster a passion for space technology among the youth of India.
+    </p>
+    <p>
+     At SpacePulse India, we envision a future where every citizen is aware of India’s contributions to space exploration and feels empowered to pursue careers in this dynamic field. By sharing real-time data, updates on ongoing missions, and educational resources, we aim to ignite curiosity and encourage the next generation of space scientists, engineers, and innovators.
+    </p>
+   </div>
+   <div class="image-content">
+    <img alt="Astronaut in space suit with a space background" height="800" src="https://edumithra.com/wp-content/uploads/2023/07/Space-Edu-Mithra-NASA-VISIT-ASTRONAUT.png" width="600" style=""/>
+   </div>
+  </div>
+  <div class="grid-overlay"></div>
+ </body>
+</html>

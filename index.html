@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website_name</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #0c0c0c;
+            padding: 30px 20px;
+            animation: alternate-reverse;
+        }
+        .navbar .logo {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .logo i {
+            font-size: 45px;
+            color: #fff;
+            margin-right: 10px;
+        }
+        .navbar .logo span {
+            color: #fff;
+            font-size: 24px;
+        }
+        .navbar .menu {
+            display: flex;
+            align-items: center;
+        }
+        .navbar .menu a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 20px;
+        }
+        .navbar .menu i {
+            color: #fff;
+            font-size: 24px;
+            margin-left: 20px;
+        }
+        .hero {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .hero img {
+            width: 100%;
+            height: auto;
+        }
+        .hero .text {
+            position: absolute;
+            top: 10%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 46px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px #000;
+            z-index: 1; 
+        }
+        .spline-viewer {
+            position: absolute;
+            top: 350px; 
+            left: 0;
+            right: 10px;
+            width: 100%;
+            height: 50%; 
+            pointer-events:all; 
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <div class="logo">
+            <i class="fas fa-circle"></i>
+            <span>SpacePulse India</span>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Articles</a>
+            <a href="#">Launches</a>
+            <a href="#">Signup</a>
+            <a href="#">Contact</a>
+            <i class="fas fa-bars"></i>
+        </div>
+    </div>
+    <div class="hero">
+        <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.35/build/spline-viewer.js"></script>
+        <spline-viewer url="https://prod.spline.design/2-c3a4IY4RXne7qP/scene.splinecode" class="spline-viewer"></spline-viewer>
+        <img alt="A beautiful space scene with planets and stars" src="anime-style-galaxy-background_23-2151133989.avif" class="background-image"/>
+        <div class="text">
+            Join the journey to space with ISRO
+        </div>
+    </div>
+    <style>
+        .about-section {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            background: url('https://img.freepik.com/premium-photo/low-angle-view-star-field-against-star-field_1048944-18627896.jpg?w=740') no-repeat center center fixed;
+            background-size: cover;
+            color: white;
+        }
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px;
+        }
+        .text-content {
+            max-width: 50%;
+        }
+        .text-content h1 {
+            font-size: 4em;
+            font-weight: 700;
+            margin: 0 0 20px 0;
+        }
+        .text-content p {
+            font-size: 1.2em;
+            line-height: 1.6;
+        }
+        .image-content img {
+            max-width: 100%;
+            height: auto;
+        }
+        .grid-overlay {
+            position: absolute;
+            top: 1300px;
+            left: 800px;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            pointer-events: none;
+        }
+    </style>
+
+    <div class="about-section">
+        <div class="container">
+            <div class="text-content">
+                <h1>About</h1>
+                <p>Welcome to SpacePulse India, your ultimate resource for real-time information about India's space program, spearheaded by the Indian Space Research Organization (ISRO). Our mission is to connect citizens with the wonders of space exploration and foster a passion for space technology among the youth of India.</p>
+                <p>At SpacePulse India, we envision a future where every citizen is aware of India's contributions to space exploration and feels empowered to pursue careers in this dynamic field. By sharing real-time data, updates on ongoing missions, and educational resources, we aim to ignite curiosity and encourage the next generation of space scientists, engineers, and innovators.</p>
+            </div>
+            <div class="image-content">
+                <img alt="Astronaut in space suit with a space background" height="800" src="https://edumithra.com/wp-content/uploads/2023/07/Space-Edu-Mithra-NASA-VISIT-ASTRONAUT.png" width="600" style=""/>
+            </div>
+        </div>
+        <div class="grid-overlay"></div>
+    </div>
+   
+</body>
+</html>
+
+<html>
+<head>
+    <title>Recent Articles</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .background {
+            background-image: url('bg1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 500px;
+            position: relative;
+            left: 400px ;
+            height: 500px;
+        }
+        .content::before {
+            content: "";
+            background-image: url('https://img.freepik.com/free-photo/galaxy-night-landscape_23-2148895321.jpg?t=st=1729964767~exp=1729968367~hmac=fd4cc59499dbe03f201b5852ab95348ee55e8e1bf1a11f2667f9a10c7088b08e&w=740');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+            z-index: 0;
+        }
+        .content h2 {
+            margin-top: 0;
+            font-size: 35px;
+            position: relative;
+            z-index: 1;
+        }
+        .article {
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        .article p {
+            margin: 5px 0;
+        }
+        .article .icon {
+            color: rgb(251, 253, 251);
+            margin-right: 10px;
+        }
+        .article a {
+            color: red;
+            text-decoration: none;
+        }
+        .dots {
+            text-align: center;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .dots span {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+        }
+        .rocket-image {
+            position: absolute;
+            top: 2038px;
+            left: 0px;
+            width: 700px;
+            height: auto;
+        }
+        .launches{
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: top ;
+            background: url('https://img.freepik.com/free-photo/magical-fantasy-black-hole-illustration_23-2151678343.jpg?t=st=1729966017~exp=1729969617~hmac=dcfcbaf774e9e54fb28453809eee2b39248ae5e7b578e0068eba433d3810e544&w=740') no-repeat center center fixed;
+            background-size: cover;
+            font-family: 'Arial', sans-serif;
+        }
+        .launches h1{
+            color: white;
+            font-size: 4em;
+            text-shadow: 2px 2px 4px #000000;
+            margin-left: 500px;
+            margin-top: 75px;
+
+        }
+        .launches p{
+            color: #fff;
+            font-size: 70px;
+            margin-left: 57%;
+            margin-right: 100%;
+
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <h2>Recent Articles</h2>
+            <div class="article">
+                <p><i class="fas fa-circle icon"></i>The launch of <a href="#">GSLV-F14/INSAT-3DS</a> mission is accomplished on Saturday, February 17, 2024, at 17:30 hrs IST from SDSC-SHAR Sriharikot.</p>
+            </div>
+            <div class="article">
+                <p><i class="fas fa-circle icon"></i>ISRO's <a href="#">PSLV-C58</a> has launched XPOSAT Satellite into an Eastward low inclination orbit on January 01, 2024 09:10 Hrs IST.</p>
+            </div>
+            <div class="article">
+                <p><i class="fas fa-circle icon"></i>The third developmental flight of SSLV is successful. The <a href="#">SSLV-D3</a> placed EOS-08 precisely into the orbit.</p>
+            </div>
+            <div class="article">
+                <p><i class="fas fa-circle icon"></i><a href="#">TV-D1</a> Test Flight is accomplished. Crew Escape System performed as intended. Mission Gaganyaan gets off on a successful note.</p>
+            </div>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <img alt="Rocket launching into space" class="rocket-image" height="600" src="https://www.freepnglogos.com/uploads/rocket-png/rocket-minneapolis-web-design-digital-marketing-agency-13.png" width="400"/>
+
+    </div>
+    <style>
+        .launches{
+            position: absolute;
+            max-width: 100%;
+
+        }
+        .launches p{
+            font-size: 70px;
+            color: #fff;
+            margin-right: -1000px;
+
+        }
+    </style>
+    <div class="launches">
+        <h1>Total Launches</h1>
+        <div class="counter" style="margin-top: 100px; margin-right: 300px;">
+            <p class="count" data-target="92">0</p>
+        </div>
+        <script src="main.js"></script>
+    </div>
+
+    
+</body>
+
+</html>
+
+
+    

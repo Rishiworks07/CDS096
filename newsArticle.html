@@ -1,0 +1,106 @@
+<html>
+<head>
+    <title>Recent Articles</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+        }
+        .background {
+            background-image: url('');
+            background-size: cover;
+            background-position: center;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .content {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 20px;
+            max-width: 500px;
+            position: relative;
+            left: 400px ;
+            height: 500px;
+        }
+        .content::before {
+            content: "";
+            background-image: url('https://img.freepik.com/free-photo/galaxy-night-landscape_23-2148895321.jpg?t=st=1729964767~exp=1729968367~hmac=fd4cc59499dbe03f201b5852ab95348ee55e8e1bf1a11f2667f9a10c7088b08e&w=740');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.3;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+            z-index: 0;
+        }
+        .content h2 {
+            margin-top: 0;
+            font-size: 35px;
+            position: relative;
+            z-index: 1;
+        }
+        .article {
+            margin-bottom: 50px;
+            position: relative;
+            z-index: 1;
+        }
+        .article p {
+            margin: 5px 0;
+        }
+        .article .icon {
+            color: green;
+            margin-right: 10px;
+        }
+        .article a {
+            color: red;
+            text-decoration: none;
+        }
+        .dots {
+            text-align: center;
+            margin-top: 10px;
+            position: relative;
+            z-index: 1;
+        }
+        .dots span {
+            height: 10px;
+            width: 10px;
+            margin: 0 5px;
+            background-color: white;
+            border-radius: 50%;
+            display: inline-block;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <div class="background">
+        <div class="content">
+            <h2>Recent Articles</h2>
+            <div class="article">
+                <p><i class="fas fa-circle icon"></i>The launch of <a href="#">GSLV-F14/INSAT-3DS</a> mission is accomplished on Saturday, February 17, 2024, at 17:30 hrs IST from SDSC-SHAR Sriharikot.</p>
+            </div>
+            <div class="article">
+                <p><i class="fas fa-circle icon"></i>ISRO's <a href="#">PSLV-C58</a> has launched XPOSAT Satellite into an Eastward low inclination orbit on January 01, 2024 09:10 Hrs IST.</p>
+            </div>
+            <div class="article">
+                <p><i class="fas fa-circle icon"></i>The third developmental flight of SSLV is successful. The <a href="#">SSLV-D3</a> placed EOS-08 precisely into the orbit.</p>
+            </div>
+            <div class="article">
+                <p><i class="fas fa-circle icon"></i><a href="#">TV-D1</a> Test Flight is accomplished. Crew Escape System performed as intended. Mission Gaganyaan gets off on a successful note.</p>
+            </div>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
